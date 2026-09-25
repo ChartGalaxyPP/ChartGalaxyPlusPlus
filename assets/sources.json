@@ -130,60 +130,11 @@
     }
   ],
   "annotation": {
-    "index": 20,
-    "sample_id": "d3-js_diverging_bar_chart_diverging_bar_plain_chart_03/sample_5364",
-    "benchmark_id": "layout_400ffffeb13d992a35ac",
-    "source_type": "synthetic",
-    "track": "layout",
-    "split": "test",
-    "shard": "data/synthetic/test/part-00000.tar.gz",
-    "annotation_file": "400ffffeb13d992a35ac0090ccdd3f4d.json",
-    "image_file": "400ffffeb13d992a35ac0090ccdd3f4d.png",
-    "image_sha256": "cb2901ae06da12e8a171ada83a298f592fe0c9f58a27fc4836730919a726e6a4",
-    "annotation_sha256": "6e8b6ae8a8d58102538467bcfefc245f7d0697b1bc917b1a4ab34db85a571022",
-    "scene_graph_sha256": "ba0529dc354b736ce0fe44b8e545d09aa3b8c438fffbd6c7b44b330ab026e911",
-    "shown_parent_links": [
-      [
-        "<chart 5>",
-        "ROOT"
-      ],
-      [
-        "<data_item 9>",
-        "<chart 5>"
-      ],
-      [
-        "<data_item 10>",
-        "<data_item 9>"
-      ],
-      [
-        "<data_item 13>",
-        "<data_item 9>"
-      ],
-      [
-        "<image 16>",
-        "<data_item 9>"
-      ],
-      [
-        "<text 17>",
-        "<data_item 9>"
-      ],
-      [
-        "<text 11>",
-        "<data_item 10>"
-      ],
-      [
-        "<shape 12>",
-        "<data_item 10>"
-      ],
-      [
-        "<text 14>",
-        "<data_item 13>"
-      ],
-      [
-        "<shape 15>",
-        "<data_item 13>"
-      ]
-    ]
+    "source_type": "paper_figure",
+    "source_figure": "scene_graph_representation.pdf",
+    "source_sha256": "f1e16e6d3a7fdc84e5a90be0b6f652e16307f06f28fe2101413f7ce579ab0a96",
+    "description": "Pasta-production infographic illustrating element annotations, semantic groups, node attributes, hierarchy, and spatial relationships.",
+    "node_ids": "Illustrative IDs from the paper figure; not a claim of released sample identifiers."
   },
   "paper_figures": {
     "image2json-results.png": "Qualitative comparison of image-to-scene-graph predictions (paper figure).",

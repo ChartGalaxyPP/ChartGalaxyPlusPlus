@@ -22,9 +22,9 @@
 
 ## What is annotated?
 
-![An infographic chart and an excerpt of its actual scene graph, linking a sector label, icon, and two years of bar marks](assets/annotation.png)
+![A pasta-production infographic annotated with text and image elements, semantic groups, node attributes, hierarchy, and spatial relationships](assets/annotation.png)
 
-*One data item connects the FINANCE label and icon to both years of marks. The excerpt preserves the released node IDs and parent links; other branches are omitted. [Enlarge](assets/annotation.png)*
+*The pasta-production example from the paper: each country groups a value, a pasta image, a flag, and a country label. The scene graph records these groups, element attributes, and hierarchical and spatial relationships. [Enlarge](assets/annotation.png)*
 
 | Layer | Annotation content |
 | --- | --- |
