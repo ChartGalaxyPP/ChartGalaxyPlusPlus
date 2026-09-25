@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "date_utc": "2026-09-24T12:34:21.923430+00:00",
+  "scope": "One standalone image-to-JSON inference; no benchmark accuracy evaluation.",
+  "runtime": {
+    "python": "3.11.14",
+    "vllm": "0.20.2",
+    "torch": "2.11.0",
+    "transformers": "5.12.1",
+    "xgrammar": "0.1.32",
+    "cuda": "13.0"
+  },
+  "dependency_consistency_check": "passed",
+  "platform": "Linux x86_64",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01",
+  "gpu_count": 1,
+  "input_sample_id": "d3-js_horizontal_group_bar_chart_horizontal_group_bar_chart_03/sample_28444",
+  "input_split": "train",
+  "input_image_sha256": "78967810fd2d2da24e9eac93e7b3f0ca439d4f202404fd042f0f318bdd4671ba",
+  "input_example": "Dataset repository: examples/01-layout/image.png",
+  "inference_spec_sha256": "a50023c63e657eff70e2cfdd42f384eedd085ffa34898aa6d7e34cb16618bbc7",
+  "requirements_sha256": "3906fb04e65a3815d7c4c4248b8ac0e8bfdacbc722ba44491be344ce225ec036",
+  "finish_reason": "stop",
+  "output_tokens": 11485,
+  "layout_items": 128,
+  "node_kinds": {
+    "group": 27,
+    "element": 101
+  },
+  "strict_json_parse": true,
+  "producer_schema_checks_passed": true,
+  "native_evaluator_schema_and_graph_checks_passed": true,
+  "recovery_used": false,
+  "raw_prediction_sha256": "bceee5f5cd9d33d5e9ead0095dfdfa572cbca752c9e35ee696dfcf4b5aad4334",
+  "prediction_sha256": "2510f614f11d9df4393af8822b23386ea4a0ef5323365eb82096d8c3d8947da6",
+  "model_assets_unchanged_and_hash_verified": 9,
+  "accuracy_measured": false
+}

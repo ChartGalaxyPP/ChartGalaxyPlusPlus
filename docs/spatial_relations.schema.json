@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChartGalaxy++ stored spatial relationships",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "relation_type": {
+            "const": "relative_position"
+          },
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "directions": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "left",
+                "right",
+                "above",
+                "below"
+              ]
+            }
+          }
+        },
+        "required": [
+          "relation_type",
+          "from_id",
+          "to_id",
+          "directions"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "relation_type": {
+            "const": "aligned_with"
+          },
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "left",
+                "right",
+                "top",
+                "bottom",
+                "center_x",
+                "center_y"
+              ]
+            }
+          }
+        },
+        "required": [
+          "relation_type",
+          "from_id",
+          "to_id",
+          "basis"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "relation_type": {
+            "const": "bbox_overlaps"
+          },
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "relation_type",
+          "from_id",
+          "to_id"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "relation_type": {
+            "const": "bbox_distance"
+          },
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "is_near": {
+            "type": "boolean"
+          },
+          "distance_px": {
+            "type": "number",
+            "minimum": 0
+          },
+          "distance_ratio": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "relation_type",
+          "from_id",
+          "to_id",
+          "is_near",
+          "distance_px",
+          "distance_ratio"
+        ],
+        "additionalProperties": false
+      }
+    ]
+  }
+}

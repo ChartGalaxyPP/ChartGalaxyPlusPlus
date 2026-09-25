@@ -1,0 +1,39 @@
+{
+  "system_prompt": "You produce a complete structured design description from an image. Return only valid JSON in the requested full schema.",
+  "user_prompt": "Generate the complete JSON containing high_level_description, style_description, elements.background, and elements.layout. Every layout item must contain type, label, parent, bbox in xyxy_1000 coordinates, and desc. When exact visible text is available for an item of type \"text\", include it in the text field. Also include style_description.color_palette and preserve the full annotation schema: layout items include node_kind, color_palette, and role or role_family when applicable. The type value is the group_type or element_type of the node. Use null for unavailable style descriptions and [] for empty color palettes.",
+  "enable_thinking": false,
+  "max_model_len": 32768,
+  "max_new_tokens": 20000,
+  "max_pixels": 2359296,
+  "gpu_memory_utilization": 0.82,
+  "seed": 42,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "repetition_penalty": 1.0,
+  "frequency_penalty": 0.0,
+  "dtype": "bfloat16",
+  "tensor_parallel_size": 1,
+  "max_num_seqs": 1,
+  "gdn_prefill_backend": "triton",
+  "compilation_config": {
+    "mode": 0,
+    "cudagraph_mode": 2,
+    "cudagraph_capture_sizes": [
+      128,
+      192,
+      256
+    ]
+  },
+  "environment": {
+    "VLLM_USE_DEEP_GEMM": "0",
+    "VLLM_MOE_USE_DEEP_GEMM": "0",
+    "VLLM_USE_FLASHINFER_SAMPLER": "0"
+  },
+  "upstream_validated_runtime": {
+    "python": "3.11",
+    "vllm": "0.20.2"
+  },
+  "output_bbox_format": "xyxy_1000",
+  "output_nodes_path": "elements.layout"
+}

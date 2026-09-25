@@ -1,0 +1,154 @@
+{
+  "release": "v1.0",
+  "assets": [
+    {
+      "file": "image-to-scene-graph.tar.gz",
+      "bytes": 132604183,
+      "sha256": "74f0c1c7d868a2069d37d0a0dc1ef953b6b5b4a4996299d3a1b14734c35b6606",
+      "members": 61,
+      "verified": true
+    },
+    {
+      "file": "qa.tar.gz",
+      "bytes": 519244637,
+      "sha256": "c2f8fd782d68a903742f9e36ea2c2532298ccdca02d9f92910a3afb84d3cce70",
+      "members": 1014,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-metadata.tar.gz",
+      "bytes": 229302304,
+      "sha256": "7049ef4d8308a949e8e63856c1a408ac4e1f30af2fc8d643eabfcc3909709ecc",
+      "members": 43,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-ernie_image_turbo-00.tar.gz",
+      "bytes": 857948147,
+      "sha256": "4c73d9d0db245842d617bf8f5ccdc1c5958225da4eabb048555a753be4639e1c",
+      "members": 1000,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-glm_image-00.tar.gz",
+      "bytes": 1266607361,
+      "sha256": "cb135fb931c9bfce37e97bc7586a237171b88792739ceb55f6eaddb231f6a5df",
+      "members": 1000,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-google_nano_banana2-00.tar.gz",
+      "bytes": 1151054335,
+      "sha256": "94bacf0a30af62b885a65e269515520c8abb666228dab4ff855a3e4082bfc2e5",
+      "members": 981,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-google_nano_banana_pro-00.tar.gz",
+      "bytes": 1136766894,
+      "sha256": "e3b047c38f9949eefd503ad3fb28c2c6a24360a092d5e3aaf45744b2f577d97e",
+      "members": 987,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-hidream_o1-00.tar.gz",
+      "bytes": 1598856428,
+      "sha256": "9bc4a77d49ca98848ba1175825985668c2ee78a49ccbf16c6807a1ad731baea2",
+      "members": 916,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-hidream_o1-01.tar.gz",
+      "bytes": 178729522,
+      "sha256": "e0fd013dc651a96871544dcc842eb22897657ba10696481dcb01f0c206b57dcf",
+      "members": 84,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-ideogram4-00.tar.gz",
+      "bytes": 1384845827,
+      "sha256": "caed5a887ded3dc044e2fef87f857c33ca76dfaebfcdddeedd25e87b9aa88b17",
+      "members": 998,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-openai_gpt_image_2-00.tar.gz",
+      "bytes": 1482174300,
+      "sha256": "6feb7be3b4c7c1512f868229ae48658d646b55a0ff6e3f9ce33929512d297b1b",
+      "members": 992,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-openai_gpt_image_25_sunburst-00.tar.gz",
+      "bytes": 1337416137,
+      "sha256": "7bd2f6f1113c77932335a8334f3bdfba680eb3a4b4ccadee8025b2ad1e8e4325",
+      "members": 992,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-qwen_image_2512-00.tar.gz",
+      "bytes": 1599032554,
+      "sha256": "a5630a4bc3cfd7389d433abf2358971e14e9a478677ae0462a65145cbfcae6b6",
+      "members": 969,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-qwen_image_2512-01.tar.gz",
+      "bytes": 51151636,
+      "sha256": "b50625442b83215331c8ec4c7aa1f77dc443aaa43a7ebdd0b93faca7b293eb74",
+      "members": 30,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-qwen_image_sp_elements-00.tar.gz",
+      "bytes": 1257377139,
+      "sha256": "ace9fa0c4f611121d4beb62b070396cc12f90ba2cb883291d2d27c4861d109b3",
+      "members": 1000,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-sensenova_v3-00.tar.gz",
+      "bytes": 1596537634,
+      "sha256": "06e223e07791aabf9272c0e44d27240f7fcb8fd83c0897d72ea033eea1688a74",
+      "members": 314,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-sensenova_v3-01.tar.gz",
+      "bytes": 1596167021,
+      "sha256": "86f8425a96b76de55ef540751f9cd6933df5c60cce87ea9d12af4c21d8f610a7",
+      "members": 318,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-sensenova_v3-02.tar.gz",
+      "bytes": 1597404138,
+      "sha256": "b0b03f8e321b569b44badf0252763e997966d592a5c9697cb41c4da658fdb241",
+      "members": 314,
+      "verified": true
+    },
+    {
+      "file": "scene-graph-preservation-images-sensenova_v3-03.tar.gz",
+      "bytes": 269389407,
+      "sha256": "db65163bf300ed4c5a1d2181ea7f5a05c8902bad1788991f17a12afe15f830f5",
+      "members": 54,
+      "verified": true
+    }
+  ],
+  "components": {
+    "image_to_scene_graph": {
+      "records": 11000,
+      "models": 11
+    },
+    "qa": {
+      "questions": 1266,
+      "charts": 1000,
+      "images": 1006
+    },
+    "scene_graph_preservation": {
+      "score_records": 11000,
+      "generated_images": 10949,
+      "failures": 51
+    }
+  }
+}

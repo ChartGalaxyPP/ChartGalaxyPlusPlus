@@ -1,0 +1,2450 @@
+{
+  "high_level_description": "Frame the piece as a landscape digital vector graphic infographic led by a horizontal group bar chart. The chart shows durability scores for <text 6> and <text 14> materials over time.\n\nThe composition assigns a dominant region at the right side to <chart 5>. Inside it, the quantitative marks, labels, and structural guides remain visually coordinated.\n\nUse <text 2> and <text 3> as the editorial entry point in the upper left, with a clear hierarchy of scale, weight, and spacing. Additional context comes from <image 124> at the middle left, <panel 125> at the lower left, <text 128> at the lower left, and <shape 4> at the upper left.\n\nUse clean, modern editorial design with a focus on data clarity against a flat full-canvas field. Use even graphic lighting with subtle shadow effects for local depth and clear layer separation.",
+  "style_description": {
+    "aesthetics": "Clean, modern editorial design with a focus on data clarity. Uses a light neutral background with high-contrast text and distinct color coding for data series. Minimalist data visualization with a focus on readability and hierarchy.",
+    "lighting": "Flat, even lighting typical of digital editorial graphics. or gradients on text or background.",
+    "medium": "Digital vector illustration and typography.",
+    "photo": null,
+    "art_style": null,
+    "color_palette": [
+      "#F5F7FA",
+      "#0F172A",
+      "#2563EB",
+      "#334155",
+      "#EAF1FF",
+      "#64748B"
+    ]
+  },
+  "elements": {
+    "background": "A continuous flat field fills the full canvas with a flat, even finish without photographic depth. It remains visually quiet and contains no foreground subjects or text.",
+    "layout": [
+      {
+        "type": "panel",
+        "label": "<panel 1>",
+        "parent": "ROOT",
+        "bbox": [
+          130,
+          40,
+          352,
+          338
+        ],
+        "desc": "A header containing one headline, one subheadline, and one section divider.",
+        "color_palette": [
+          "#0F172A",
+          "#334155",
+          "#2563EB"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "text",
+        "label": "<text 2>",
+        "parent": "<panel 1>",
+        "bbox": [
+          134,
+          40,
+          314,
+          143
+        ],
+        "text": "MATERIAL\nDURABILITY",
+        "desc": "A 2-line, display-scale, extra-bold headline.",
+        "color_palette": [
+          "#0F172A"
+        ],
+        "node_kind": "element",
+        "role": "heading",
+        "role_family": "context"
+      },
+      {
+        "type": "text",
+        "label": "<text 3>",
+        "parent": "<panel 1>",
+        "bbox": [
+          130,
+          225,
+          351,
+          338
+        ],
+        "text": "Comparing longevity of\nBronze vs. Marble from\n1800 to 2024",
+        "desc": "A 3-line, large-scale, medium subheadline.",
+        "color_palette": [
+          "#334155"
+        ],
+        "node_kind": "element",
+        "role": "heading",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 4>",
+        "parent": "<panel 1>",
+        "bbox": [
+          159,
+          189,
+          352,
+          201
+        ],
+        "desc": "A thin horizontal section divider.",
+        "color_palette": [
+          "#2563EB"
+        ],
+        "node_kind": "element",
+        "role": "separator",
+        "role_family": "presentation"
+      },
+      {
+        "type": "chart",
+        "label": "<chart 5>",
+        "parent": "ROOT",
+        "bbox": [
+          409,
+          28,
+          903,
+          929
+        ],
+        "desc": "A horizontal group bar chart containing 12 tick labels, 12 axis lines, 12 data rows, four badges, and two category labels.",
+        "color_palette": [
+          "#FFFFFF",
+          "#165C42",
+          "#111827",
+          "#6B705C",
+          "#CB997E"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "text",
+        "label": "<text 6>",
+        "parent": "<chart 5>",
+        "bbox": [
+          483,
+          62,
+          545,
+          83
+        ],
+        "text": "BRONZE",
+        "desc": "A medium-scale, extra-bold category label.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 7>",
+        "parent": "<chart 5>",
+        "bbox": [
+          579,
+          432,
+          585,
+          445
+        ],
+        "text": "0",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 8>",
+        "parent": "<chart 5>",
+        "bbox": [
+          640,
+          432,
+          650,
+          445
+        ],
+        "text": "19",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 9>",
+        "parent": "<chart 5>",
+        "bbox": [
+          703,
+          432,
+          713,
+          445
+        ],
+        "text": "38",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 10>",
+        "parent": "<chart 5>",
+        "bbox": [
+          766,
+          432,
+          777,
+          445
+        ],
+        "text": "57",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 11>",
+        "parent": "<chart 5>",
+        "bbox": [
+          829,
+          432,
+          840,
+          445
+        ],
+        "text": "76",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 12>",
+        "parent": "<chart 5>",
+        "bbox": [
+          892,
+          432,
+          903,
+          445
+        ],
+        "text": "95",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 13>",
+        "parent": "<chart 5>",
+        "bbox": [
+          703,
+          445,
+          776,
+          462
+        ],
+        "text": "Durability Score",
+        "desc": "A medium-scale, extra-bold, centered axis title.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "axis_title",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 14>",
+        "parent": "<chart 5>",
+        "bbox": [
+          483,
+          529,
+          546,
+          550
+        ],
+        "text": "MARBLE",
+        "desc": "A medium-scale, extra-bold category label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 15>",
+        "parent": "<chart 5>",
+        "bbox": [
+          579,
+          899,
+          585,
+          912
+        ],
+        "text": "0",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 16>",
+        "parent": "<chart 5>",
+        "bbox": [
+          640,
+          899,
+          650,
+          912
+        ],
+        "text": "19",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 17>",
+        "parent": "<chart 5>",
+        "bbox": [
+          703,
+          899,
+          713,
+          912
+        ],
+        "text": "38",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 18>",
+        "parent": "<chart 5>",
+        "bbox": [
+          766,
+          899,
+          777,
+          912
+        ],
+        "text": "57",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 19>",
+        "parent": "<chart 5>",
+        "bbox": [
+          829,
+          899,
+          840,
+          912
+        ],
+        "text": "76",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 20>",
+        "parent": "<chart 5>",
+        "bbox": [
+          892,
+          899,
+          903,
+          912
+        ],
+        "text": "95",
+        "desc": "A small-scale, semibold, centered numeric tick label.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "tick_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "text",
+        "label": "<text 21>",
+        "parent": "<chart 5>",
+        "bbox": [
+          703,
+          912,
+          776,
+          929
+        ],
+        "text": "Durability Score",
+        "desc": "A medium-scale, extra-bold, centered axis title.",
+        "color_palette": [
+          "#165C42"
+        ],
+        "node_kind": "element",
+        "role": "axis_title",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 22>",
+        "parent": "<chart 5>",
+        "bbox": [
+          464,
+          46,
+          642,
+          101
+        ],
+        "desc": "A badge.",
+        "color_palette": [
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "boundary",
+        "role_family": "presentation"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 23>",
+        "parent": "<chart 5>",
+        "bbox": [
+          464,
+          513,
+          642,
+          568
+        ],
+        "desc": "A badge.",
+        "color_palette": [
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "boundary",
+        "role_family": "presentation"
+      },
+      {
+        "type": "image",
+        "label": "<image 24>",
+        "parent": "<chart 5>",
+        "bbox": [
+          409,
+          28,
+          460,
+          119
+        ],
+        "desc": "An icon representing Bronze.",
+        "color_palette": [
+          "#483018",
+          "#301818",
+          "#303018",
+          "#604830",
+          "#786048"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "image",
+        "label": "<image 25>",
+        "parent": "<chart 5>",
+        "bbox": [
+          409,
+          495,
+          460,
+          586
+        ],
+        "desc": "An icon representing Marble.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 26>",
+        "parent": "<chart 5>",
+        "bbox": [
+          423,
+          54,
+          445,
+          93
+        ],
+        "desc": "A badge.",
+        "color_palette": [
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "boundary",
+        "role_family": "presentation"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 27>",
+        "parent": "<chart 5>",
+        "bbox": [
+          423,
+          521,
+          445,
+          560
+        ],
+        "desc": "A badge.",
+        "color_palette": [
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "boundary",
+        "role_family": "presentation"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 28>",
+        "parent": "<chart 5>",
+        "bbox": [
+          581,
+          417,
+          583,
+          426
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 29>",
+        "parent": "<chart 5>",
+        "bbox": [
+          644,
+          417,
+          646,
+          426
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 30>",
+        "parent": "<chart 5>",
+        "bbox": [
+          834,
+          417,
+          836,
+          426
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 31>",
+        "parent": "<chart 5>",
+        "bbox": [
+          897,
+          417,
+          899,
+          426
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 32>",
+        "parent": "<chart 5>",
+        "bbox": [
+          581,
+          884,
+          583,
+          893
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 33>",
+        "parent": "<chart 5>",
+        "bbox": [
+          644,
+          884,
+          646,
+          893
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 34>",
+        "parent": "<chart 5>",
+        "bbox": [
+          834,
+          884,
+          836,
+          893
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 35>",
+        "parent": "<chart 5>",
+        "bbox": [
+          897,
+          884,
+          899,
+          893
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 36>",
+        "parent": "<chart 5>",
+        "bbox": [
+          708,
+          417,
+          709,
+          426
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 37>",
+        "parent": "<chart 5>",
+        "bbox": [
+          771,
+          417,
+          772,
+          426
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#6B705C"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 38>",
+        "parent": "<chart 5>",
+        "bbox": [
+          708,
+          884,
+          709,
+          893
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 39>",
+        "parent": "<chart 5>",
+        "bbox": [
+          771,
+          884,
+          772,
+          893
+        ],
+        "desc": "The vertical axis baseline.",
+        "color_palette": [
+          "#000000",
+          "#CB997E"
+        ],
+        "node_kind": "element",
+        "role": "axis_line",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 40>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          140,
+          898,
+          175
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 41>",
+        "parent": "<data_item 40>",
+        "bbox": [
+          424,
+          140,
+          444,
+          175
+        ],
+        "desc": "An icon representing 1800.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 42>",
+        "parent": "<data_item 40>",
+        "bbox": [
+          429,
+          150,
+          438,
+          165
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 43>",
+        "parent": "<data_item 40>",
+        "bbox": [
+          456,
+          149,
+          481,
+          166
+        ],
+        "text": "1800",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 44>",
+        "parent": "<data_item 40>",
+        "bbox": [
+          582,
+          145,
+          898,
+          170
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#FFFFFF",
+          "#000000"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 45>",
+        "parent": "<data_item 44>",
+        "bbox": [
+          582,
+          145,
+          898,
+          170
+        ],
+        "desc": "A horizontal bar for 1800 / Bronze, encoding 95.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 46>",
+        "parent": "<data_item 44>",
+        "bbox": [
+          880,
+          149,
+          894,
+          166
+        ],
+        "text": "95",
+        "desc": "A medium-scale, extra-bold, right-aligned value label.",
+        "color_palette": [
+          "#FFFFFF",
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 47>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          183,
+          892,
+          217
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 48>",
+        "parent": "<data_item 47>",
+        "bbox": [
+          424,
+          183,
+          444,
+          217
+        ],
+        "desc": "An icon representing 1850.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 49>",
+        "parent": "<data_item 47>",
+        "bbox": [
+          429,
+          192,
+          438,
+          208
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 50>",
+        "parent": "<data_item 47>",
+        "bbox": [
+          456,
+          191,
+          481,
+          208
+        ],
+        "text": "1850",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 51>",
+        "parent": "<data_item 47>",
+        "bbox": [
+          582,
+          187,
+          892,
+          213
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#FFFFFF",
+          "#000000"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 52>",
+        "parent": "<data_item 51>",
+        "bbox": [
+          582,
+          187,
+          892,
+          213
+        ],
+        "desc": "A horizontal bar for 1850 / Bronze, encoding 93.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 53>",
+        "parent": "<data_item 51>",
+        "bbox": [
+          873,
+          191,
+          888,
+          209
+        ],
+        "text": "93",
+        "desc": "A medium-scale, extra-bold, right-aligned value label.",
+        "color_palette": [
+          "#FFFFFF",
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 54>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          225,
+          900,
+          260
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 55>",
+        "parent": "<data_item 54>",
+        "bbox": [
+          424,
+          225,
+          444,
+          260
+        ],
+        "desc": "An icon representing 1900.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 56>",
+        "parent": "<data_item 54>",
+        "bbox": [
+          429,
+          234,
+          438,
+          250
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 57>",
+        "parent": "<data_item 54>",
+        "bbox": [
+          456,
+          233,
+          481,
+          250
+        ],
+        "text": "1900",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 58>",
+        "parent": "<data_item 54>",
+        "bbox": [
+          582,
+          229,
+          900,
+          255
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 59>",
+        "parent": "<data_item 58>",
+        "bbox": [
+          582,
+          229,
+          882,
+          255
+        ],
+        "desc": "A horizontal bar for 1900 / Bronze, encoding 90.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 60>",
+        "parent": "<data_item 58>",
+        "bbox": [
+          886,
+          234,
+          900,
+          250
+        ],
+        "text": "90",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 61>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          267,
+          893,
+          302
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 62>",
+        "parent": "<data_item 61>",
+        "bbox": [
+          424,
+          267,
+          444,
+          302
+        ],
+        "desc": "An icon representing 1950.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 63>",
+        "parent": "<data_item 61>",
+        "bbox": [
+          429,
+          277,
+          438,
+          292
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 64>",
+        "parent": "<data_item 61>",
+        "bbox": [
+          456,
+          275,
+          481,
+          292
+        ],
+        "text": "1950",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 65>",
+        "parent": "<data_item 61>",
+        "bbox": [
+          582,
+          272,
+          893,
+          297
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 66>",
+        "parent": "<data_item 65>",
+        "bbox": [
+          582,
+          272,
+          875,
+          297
+        ],
+        "desc": "A horizontal bar for 1950 / Bronze, encoding 88.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 67>",
+        "parent": "<data_item 65>",
+        "bbox": [
+          880,
+          276,
+          893,
+          292
+        ],
+        "text": "88",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 68>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          309,
+          883,
+          344
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 69>",
+        "parent": "<data_item 68>",
+        "bbox": [
+          424,
+          309,
+          444,
+          344
+        ],
+        "desc": "An icon representing 2000.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 70>",
+        "parent": "<data_item 68>",
+        "bbox": [
+          429,
+          319,
+          438,
+          334
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 71>",
+        "parent": "<data_item 68>",
+        "bbox": [
+          455,
+          317,
+          481,
+          335
+        ],
+        "text": "2000",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 72>",
+        "parent": "<data_item 68>",
+        "bbox": [
+          582,
+          314,
+          883,
+          339
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 73>",
+        "parent": "<data_item 72>",
+        "bbox": [
+          582,
+          314,
+          865,
+          339
+        ],
+        "desc": "A horizontal bar for 2000 / Bronze, encoding 85.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 74>",
+        "parent": "<data_item 72>",
+        "bbox": [
+          870,
+          318,
+          883,
+          334
+        ],
+        "text": "85",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 75>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          351,
+          873,
+          386
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 76>",
+        "parent": "<data_item 75>",
+        "bbox": [
+          424,
+          351,
+          444,
+          386
+        ],
+        "desc": "An icon representing 2024.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 77>",
+        "parent": "<data_item 75>",
+        "bbox": [
+          429,
+          361,
+          438,
+          376
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 78>",
+        "parent": "<data_item 75>",
+        "bbox": [
+          455,
+          360,
+          481,
+          377
+        ],
+        "text": "2024",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 79>",
+        "parent": "<data_item 75>",
+        "bbox": [
+          582,
+          356,
+          873,
+          382
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 80>",
+        "parent": "<data_item 79>",
+        "bbox": [
+          582,
+          356,
+          855,
+          382
+        ],
+        "desc": "A horizontal bar for 2024 / Bronze, encoding 82.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 81>",
+        "parent": "<data_item 79>",
+        "bbox": [
+          860,
+          360,
+          873,
+          377
+        ],
+        "text": "82",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#666A57"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 82>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          607,
+          888,
+          642
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 83>",
+        "parent": "<data_item 82>",
+        "bbox": [
+          424,
+          607,
+          444,
+          642
+        ],
+        "desc": "An icon representing 1800.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 84>",
+        "parent": "<data_item 82>",
+        "bbox": [
+          429,
+          617,
+          438,
+          632
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 85>",
+        "parent": "<data_item 82>",
+        "bbox": [
+          456,
+          615,
+          481,
+          633
+        ],
+        "text": "1800",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 86>",
+        "parent": "<data_item 82>",
+        "bbox": [
+          582,
+          612,
+          888,
+          637
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 87>",
+        "parent": "<data_item 86>",
+        "bbox": [
+          582,
+          612,
+          888,
+          637
+        ],
+        "desc": "A horizontal bar for 1800 / Marble, encoding 92.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 88>",
+        "parent": "<data_item 86>",
+        "bbox": [
+          870,
+          616,
+          884,
+          632
+        ],
+        "text": "92",
+        "desc": "A medium-scale, extra-bold, right-aligned value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 89>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          649,
+          893,
+          684
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 90>",
+        "parent": "<data_item 89>",
+        "bbox": [
+          424,
+          649,
+          444,
+          684
+        ],
+        "desc": "An icon representing 1850.",
+        "color_palette": [
+          "#F0F0F0",
+          "#3060A8",
+          "#4878A8",
+          "#D8D8F0",
+          "#C0D8D8"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 91>",
+        "parent": "<data_item 89>",
+        "bbox": [
+          429,
+          659,
+          438,
+          674
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 92>",
+        "parent": "<data_item 89>",
+        "bbox": [
+          456,
+          658,
+          481,
+          675
+        ],
+        "text": "1850",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 93>",
+        "parent": "<data_item 89>",
+        "bbox": [
+          582,
+          654,
+          893,
+          679
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 94>",
+        "parent": "<data_item 93>",
+        "bbox": [
+          582,
+          654,
+          875,
+          679
+        ],
+        "desc": "A horizontal bar for 1850 / Marble, encoding 88.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 95>",
+        "parent": "<data_item 93>",
+        "bbox": [
+          880,
+          658,
+          893,
+          675
+        ],
+        "text": "88",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 96>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          692,
+          873,
+          726
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 97>",
+        "parent": "<data_item 96>",
+        "bbox": [
+          424,
+          692,
+          444,
+          726
+        ],
+        "desc": "An icon representing 1900.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 98>",
+        "parent": "<data_item 96>",
+        "bbox": [
+          429,
+          701,
+          438,
+          717
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 99>",
+        "parent": "<data_item 96>",
+        "bbox": [
+          456,
+          700,
+          481,
+          717
+        ],
+        "text": "1900",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 100>",
+        "parent": "<data_item 96>",
+        "bbox": [
+          582,
+          696,
+          873,
+          722
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 101>",
+        "parent": "<data_item 100>",
+        "bbox": [
+          582,
+          696,
+          855,
+          722
+        ],
+        "desc": "A horizontal bar for 1900 / Marble, encoding 82.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 102>",
+        "parent": "<data_item 100>",
+        "bbox": [
+          860,
+          701,
+          873,
+          717
+        ],
+        "text": "82",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 103>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          734,
+          850,
+          769
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 104>",
+        "parent": "<data_item 103>",
+        "bbox": [
+          424,
+          734,
+          444,
+          769
+        ],
+        "desc": "An icon representing 1950.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 105>",
+        "parent": "<data_item 103>",
+        "bbox": [
+          429,
+          744,
+          438,
+          759
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 106>",
+        "parent": "<data_item 103>",
+        "bbox": [
+          456,
+          742,
+          481,
+          759
+        ],
+        "text": "1950",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 107>",
+        "parent": "<data_item 103>",
+        "bbox": [
+          582,
+          738,
+          850,
+          764
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 108>",
+        "parent": "<data_item 107>",
+        "bbox": [
+          582,
+          738,
+          832,
+          764
+        ],
+        "desc": "A horizontal bar for 1950 / Marble, encoding 75.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 109>",
+        "parent": "<data_item 107>",
+        "bbox": [
+          837,
+          743,
+          850,
+          759
+        ],
+        "text": "75",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 110>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          776,
+          827,
+          811
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 111>",
+        "parent": "<data_item 110>",
+        "bbox": [
+          424,
+          776,
+          444,
+          811
+        ],
+        "desc": "An icon representing 2000.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 112>",
+        "parent": "<data_item 110>",
+        "bbox": [
+          429,
+          786,
+          438,
+          801
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 113>",
+        "parent": "<data_item 110>",
+        "bbox": [
+          455,
+          784,
+          481,
+          802
+        ],
+        "text": "2000",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 114>",
+        "parent": "<data_item 110>",
+        "bbox": [
+          582,
+          781,
+          827,
+          806
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 115>",
+        "parent": "<data_item 114>",
+        "bbox": [
+          582,
+          781,
+          809,
+          806
+        ],
+        "desc": "A horizontal bar for 2000 / Marble, encoding 68.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 116>",
+        "parent": "<data_item 114>",
+        "bbox": [
+          813,
+          785,
+          827,
+          801
+        ],
+        "text": "68",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 117>",
+        "parent": "<chart 5>",
+        "bbox": [
+          424,
+          818,
+          800,
+          853
+        ],
+        "desc": "A data row containing one category icon, one series point, one category label, and one data item.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "image",
+        "label": "<image 118>",
+        "parent": "<data_item 117>",
+        "bbox": [
+          424,
+          818,
+          444,
+          853
+        ],
+        "desc": "An icon representing 2024.",
+        "color_palette": [
+          "#607878",
+          "#D83048",
+          "#606078",
+          "#C06060",
+          "#D86060"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 119>",
+        "parent": "<data_item 117>",
+        "bbox": [
+          429,
+          828,
+          438,
+          843
+        ],
+        "desc": "A series point marking one observation.",
+        "color_palette": [
+          "#FFFFFF"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 120>",
+        "parent": "<data_item 117>",
+        "bbox": [
+          455,
+          827,
+          481,
+          844
+        ],
+        "text": "2024",
+        "desc": "A medium-scale, medium numeric category label.",
+        "color_palette": [
+          "#102822"
+        ],
+        "node_kind": "element",
+        "role": "entity_label",
+        "role_family": "reading_reference"
+      },
+      {
+        "type": "data_item",
+        "label": "<data_item 121>",
+        "parent": "<data_item 117>",
+        "bbox": [
+          582,
+          823,
+          800,
+          848
+        ],
+        "desc": "A data item containing one horizontal bar and one value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 122>",
+        "parent": "<data_item 121>",
+        "bbox": [
+          582,
+          823,
+          782,
+          848
+        ],
+        "desc": "A horizontal bar for 2024 / Marble, encoding 60.",
+        "color_palette": [
+          "#000000"
+        ],
+        "node_kind": "element",
+        "role": "data_mark",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "text",
+        "label": "<text 123>",
+        "parent": "<data_item 121>",
+        "bbox": [
+          787,
+          827,
+          800,
+          843
+        ],
+        "text": "60",
+        "desc": "A medium-scale, extra-bold value label.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "value_label",
+        "role_family": "data_expression"
+      },
+      {
+        "type": "image",
+        "label": "<image 124>",
+        "parent": "ROOT",
+        "bbox": [
+          181,
+          384,
+          331,
+          713
+        ],
+        "desc": "Classical marble bust illustration.",
+        "color_palette": [
+          "#D8D8C0",
+          "#D8D8D8",
+          "#C0C0A8",
+          "#D8C0C0",
+          "#C0A890"
+        ],
+        "node_kind": "element",
+        "role": "subject_depiction",
+        "role_family": "context"
+      },
+      {
+        "type": "panel",
+        "label": "<panel 125>",
+        "parent": "ROOT",
+        "bbox": [
+          127,
+          758,
+          385,
+          884
+        ],
+        "desc": "A callout containing one callout surface and one callout text.",
+        "color_palette": [
+          "#EAF1FF",
+          "#5C8AF0",
+          "#0F172A"
+        ],
+        "node_kind": "group"
+      },
+      {
+        "type": "shape",
+        "label": "<shape 126>",
+        "parent": "<panel 125>",
+        "bbox": [
+          127,
+          758,
+          385,
+          884
+        ],
+        "desc": "A rounded callout background.",
+        "color_palette": [
+          "#EAF1FF",
+          "#5C8AF0"
+        ],
+        "node_kind": "element",
+        "role": "boundary",
+        "role_family": "presentation"
+      },
+      {
+        "type": "text",
+        "label": "<text 127>",
+        "parent": "<panel 125>",
+        "bbox": [
+          133,
+          789,
+          343,
+          853
+        ],
+        "text": "Bronze maintains higher\nscores over time.",
+        "desc": "A 2-line, large-scale, bold callout text.",
+        "color_palette": [
+          "#0F172A"
+        ],
+        "node_kind": "element",
+        "role": "explanation",
+        "role_family": "context"
+      },
+      {
+        "type": "text",
+        "label": "<text 128>",
+        "parent": "ROOT",
+        "bbox": [
+          15,
+          945,
+          398,
+          974
+        ],
+        "text": "Source: Historical Material Science Data | Durability Score (0-100)",
+        "desc": "A medium-scale source note.",
+        "color_palette": [
+          "#111827"
+        ],
+        "node_kind": "element",
+        "role": "source_credit",
+        "role_family": "context"
+      }
+    ]
+  }
+}
