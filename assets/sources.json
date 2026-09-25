@@ -1,0 +1,192 @@
+{
+  "gallery": [
+    {
+      "position": 1,
+      "caption": "Dumbbell / range",
+      "index": 67,
+      "sample_id": "nb_bb2220eb07d52c0f4167b07d",
+      "benchmark_id": "nb2_16739d6064307d33b328",
+      "source_type": "synthetic",
+      "track": "nb2",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00002.tar.gz",
+      "annotation_file": "16739d6064307d33b328e5ea8b6b749c.json",
+      "image_file": "16739d6064307d33b328e5ea8b6b749c.png",
+      "image_sha256": "db9ca2a3385b7ea950edf1df4288ee9facf500482a439047f3b91deb095105db",
+      "annotation_sha256": "e1073435aab0148e5e73a8f197f637b7037b12bea286b18d223338b916b4dea9",
+      "scene_graph_sha256": "098bd137c4b1bdf8cb8a6f5076b354348f435f332adecb00ad0ed7350ab07b46"
+    },
+    {
+      "position": 2,
+      "caption": "Radial bars",
+      "index": 35,
+      "sample_id": "d3-js_circular_grouped_bar_chart_circular_grouped_bar_plain_chart_01/sample_34497",
+      "benchmark_id": "layout_89a243a4e8328ebbf21a",
+      "source_type": "synthetic",
+      "track": "layout",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00001.tar.gz",
+      "annotation_file": "89a243a4e8328ebbf21af9214ffb735b.json",
+      "image_file": "89a243a4e8328ebbf21af9214ffb735b.png",
+      "image_sha256": "6c8a6259bba8db954af0f415e96373d585bf16a2597e078e166793dd4a7a4657",
+      "annotation_sha256": "f45e902b57243e50a4b113ce71956d564faf424f006fc8c6c6f47620640f4ed5",
+      "scene_graph_sha256": "32bfb81da3d4c60201a2b01037b59150b5c699a97af6975955bd650185a767ba"
+    },
+    {
+      "position": 3,
+      "caption": "Interval marks",
+      "index": 103,
+      "sample_id": "nb_e885643f9025fb53201bacef",
+      "benchmark_id": "nb2_a7c1c15db8c85a280655",
+      "source_type": "synthetic",
+      "track": "nb2",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00004.tar.gz",
+      "annotation_file": "a7c1c15db8c85a280655da6ea8149de9.json",
+      "image_file": "a7c1c15db8c85a280655da6ea8149de9.png",
+      "image_sha256": "b1b1b2905b8cfb36f24cc06286cddb9a9433bded431d7e9bdaaa7a62ae5f43ed",
+      "annotation_sha256": "90b3ee3ca19a0f80cd231c7b2d3a58219afa959a9f0d0d4f053f227b742903b7",
+      "scene_graph_sha256": "126a85aef31a831a25c568274aad4c70929bc5d8effeea44dc0d79069e104928"
+    },
+    {
+      "position": 4,
+      "caption": "Circular layers",
+      "index": 106,
+      "sample_id": "nb_e3eefe82f2f150b05faa34aa",
+      "benchmark_id": "nb2_b1b73c72d9cf543dd871",
+      "source_type": "synthetic",
+      "track": "nb2",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00004.tar.gz",
+      "annotation_file": "b1b73c72d9cf543dd8719327d64628aa.json",
+      "image_file": "b1b73c72d9cf543dd8719327d64628aa.png",
+      "image_sha256": "c0aade03cf54487d165ebb58191288029bcc95d8f8b6df5a807f485e66028fd8",
+      "annotation_sha256": "ceccbbea2e7aba73f334f08e42796ee3f8929d74710e493adc9c0422741ab43e",
+      "scene_graph_sha256": "990e41bb59342b306c23d10a76669b819e40973f9d775526120370abcc9b5915"
+    },
+    {
+      "position": 5,
+      "caption": "Diverging bars",
+      "index": 20,
+      "sample_id": "d3-js_diverging_bar_chart_diverging_bar_plain_chart_03/sample_5364",
+      "benchmark_id": "layout_400ffffeb13d992a35ac",
+      "source_type": "synthetic",
+      "track": "layout",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00000.tar.gz",
+      "annotation_file": "400ffffeb13d992a35ac0090ccdd3f4d.json",
+      "image_file": "400ffffeb13d992a35ac0090ccdd3f4d.png",
+      "image_sha256": "cb2901ae06da12e8a171ada83a298f592fe0c9f58a27fc4836730919a726e6a4",
+      "annotation_sha256": "6e8b6ae8a8d58102538467bcfefc245f7d0697b1bc917b1a4ab34db85a571022",
+      "scene_graph_sha256": "ba0529dc354b736ce0fe44b8e545d09aa3b8c438fffbd6c7b44b330ab026e911"
+    },
+    {
+      "position": 6,
+      "caption": "Stacked bars",
+      "index": 124,
+      "sample_id": "nb_cce8b07b058c5ee16ba1835d",
+      "benchmark_id": "nb2_fa0cc382ebd8c5dd2d6c",
+      "source_type": "synthetic",
+      "track": "nb2",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00004.tar.gz",
+      "annotation_file": "fa0cc382ebd8c5dd2d6cf8e8dd1372cc.json",
+      "image_file": "fa0cc382ebd8c5dd2d6cf8e8dd1372cc.png",
+      "image_sha256": "7257aab8c526e73d982a9e8d6382d2919cdb52565073cc5e1b25bafd4cccda37",
+      "annotation_sha256": "ca80feb8d3c9cce797fe057a8fe5e395fb3697ac82708cfec027317fc44a74c2",
+      "scene_graph_sha256": "3f1828d1ca4fe0ab44dc3d2e918d41cae58d5beadb69164be9809eed6013be4c"
+    },
+    {
+      "position": 7,
+      "caption": "Time series",
+      "index": 71,
+      "sample_id": "nb_4c7fa3d3284baebd7748d089",
+      "benchmark_id": "nb2_332b024d1902d001e278",
+      "source_type": "synthetic",
+      "track": "nb2",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00002.tar.gz",
+      "annotation_file": "332b024d1902d001e278687fc5e990c7.json",
+      "image_file": "332b024d1902d001e278687fc5e990c7.png",
+      "image_sha256": "e70d5cc908fbf1058ba549d0abc01b3c04cc1e934b79d69eac2660849fddfc27",
+      "annotation_sha256": "c08f57b5b2643f8ee21c7f386c9aded432bbdaff88577b60e5e6781973460664",
+      "scene_graph_sha256": "d945be0c1f81af3adea881861a1e4012bd2bc33c784b6983e66fa624d1d3eb07"
+    },
+    {
+      "position": 8,
+      "caption": "Multiple lines",
+      "index": 112,
+      "sample_id": "nb_bd3466f097f2219fb2487e6b",
+      "benchmark_id": "nb2_cd147ce88da91fa3d28d",
+      "source_type": "synthetic",
+      "track": "nb2",
+      "split": "test",
+      "shard": "data/synthetic/test/part-00004.tar.gz",
+      "annotation_file": "cd147ce88da91fa3d28daf463014fb6f.json",
+      "image_file": "cd147ce88da91fa3d28daf463014fb6f.png",
+      "image_sha256": "021b5a4a11557e7f058e58f87caf01dc252c2748eebc9085b6d37290e5afc38e",
+      "annotation_sha256": "19ddc281f6544ac527fd02481c83594ac4be5699936b99d38467fa22c907819b",
+      "scene_graph_sha256": "e8463816043041524a01a43ec7d488892d75d0b80cdf1a7b18701a89bc8bf013"
+    }
+  ],
+  "annotation": {
+    "index": 20,
+    "sample_id": "d3-js_diverging_bar_chart_diverging_bar_plain_chart_03/sample_5364",
+    "benchmark_id": "layout_400ffffeb13d992a35ac",
+    "source_type": "synthetic",
+    "track": "layout",
+    "split": "test",
+    "shard": "data/synthetic/test/part-00000.tar.gz",
+    "annotation_file": "400ffffeb13d992a35ac0090ccdd3f4d.json",
+    "image_file": "400ffffeb13d992a35ac0090ccdd3f4d.png",
+    "image_sha256": "cb2901ae06da12e8a171ada83a298f592fe0c9f58a27fc4836730919a726e6a4",
+    "annotation_sha256": "6e8b6ae8a8d58102538467bcfefc245f7d0697b1bc917b1a4ab34db85a571022",
+    "scene_graph_sha256": "ba0529dc354b736ce0fe44b8e545d09aa3b8c438fffbd6c7b44b330ab026e911",
+    "shown_parent_links": [
+      [
+        "<chart 5>",
+        "ROOT"
+      ],
+      [
+        "<data_item 9>",
+        "<chart 5>"
+      ],
+      [
+        "<data_item 10>",
+        "<data_item 9>"
+      ],
+      [
+        "<data_item 13>",
+        "<data_item 9>"
+      ],
+      [
+        "<image 16>",
+        "<data_item 9>"
+      ],
+      [
+        "<text 17>",
+        "<data_item 9>"
+      ],
+      [
+        "<text 11>",
+        "<data_item 10>"
+      ],
+      [
+        "<shape 12>",
+        "<data_item 10>"
+      ],
+      [
+        "<text 14>",
+        "<data_item 13>"
+      ],
+      [
+        "<shape 15>",
+        "<data_item 13>"
+      ]
+    ]
+  },
+  "paper_figures": {
+    "image2json-results.png": "Qualitative comparison of image-to-scene-graph predictions (paper figure).",
+    "generation-results.png": "Qualitative scene graph preservation comparison (paper figure)."
+  }
+}
