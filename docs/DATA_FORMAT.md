@@ -16,9 +16,9 @@ The `real` and `synthetic` directories each have `train` and `test` splits. Each
 | `scene_graph` | Parsed scene graph JSON object |
 | `scene_graph_sha256` | SHA-256 of the compact UTF-8 JSON serialization with `ensure_ascii=False` and one trailing LF |
 | `spatial_relations` | JSON array containing stored spatial relationships |
-| `spatial_policy` | `sibling-knn2-budget100-geometric-boolean-v1` |
+| `spatial_policy` | Identifier of the spatial relationship selection policy |
 | `annotation_version` | `training-0.6` or `heldout-v2-target-0.6` |
-| `human_gold` | False; these are not independently human-validated gold labels |
+| `human_gold` | True for the 1,000 manually verified test charts; false for the training split |
 
 ## Scene graphs
 
@@ -39,7 +39,7 @@ Every relationship has `relation_type`, `from_id`, and `to_id`. Endpoints refere
 | `bbox_overlaps` | No additional fields; boxes overlap with positive area |
 | `bbox_distance` | Boolean `is_near`, plus diagnostic `distance_px` and `distance_ratio` (normalized by the image diagonal) |
 
-The frozen policy nominates nearby siblings, prioritizes group structure, and stores complete bundles of applicable relationship types for selected pairs within a 100-record budget. The budget counts relationship records, not distinct pairs. Hierarchy is preserved separately through `parent`. Missing spatial relationships are unrecorded pairs, not negative examples.
+The policy nominates nearby siblings, prioritizes group structure, and stores complete bundles of applicable relationship types for selected pairs. Hierarchy is preserved separately through `parent`. Missing spatial relationships are unrecorded pairs, not negative examples.
 
 ## Real-image references
 

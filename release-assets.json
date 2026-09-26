@@ -3,23 +3,23 @@
   "assets": [
     {
       "file": "image-to-scene-graph.tar.gz",
-      "bytes": 132604183,
-      "sha256": "74f0c1c7d868a2069d37d0a0dc1ef953b6b5b4a4996299d3a1b14734c35b6606",
+      "bytes": 132604198,
+      "sha256": "b6621c1f0a9e0f21dc0d1060c1df14b84c24118fd4bb202d7cc7ddeff6092802",
       "members": 61,
       "verified": true
     },
     {
       "file": "qa.tar.gz",
-      "bytes": 519244637,
-      "sha256": "c2f8fd782d68a903742f9e36ea2c2532298ccdca02d9f92910a3afb84d3cce70",
+      "bytes": 519244152,
+      "sha256": "a84869b94e43cabf18501170ccd9264db53254981e422819f131dc25e1e2037e",
       "members": 1014,
       "verified": true
     },
     {
       "file": "scene-graph-preservation-metadata.tar.gz",
-      "bytes": 229302304,
-      "sha256": "7049ef4d8308a949e8e63856c1a408ac4e1f30af2fc8d643eabfcc3909709ecc",
-      "members": 43,
+      "bytes": 225335719,
+      "sha256": "334a642c9238d12254213825366e5294bd6b50755ffa6bf00a772a70a01913cd",
+      "members": 42,
       "verified": true
     },
     {
@@ -148,7 +148,8 @@
     "scene_graph_preservation": {
       "score_records": 11000,
       "generated_images": 10949,
-      "failures": 51
+      "failures": 51,
+      "scoring_references_included": false
     }
   }
 }

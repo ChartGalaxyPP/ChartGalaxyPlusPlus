@@ -30,7 +30,7 @@ Recognized visible wording belongs in a text node's `text` field. `desc` provide
 
 Dataset boxes use **`[y0, x0, y1, x1]`**, with integer coordinates normalized to 0–1000. Multiply horizontal coordinates by `width / 1000` and vertical coordinates by `height / 1000` to obtain pixels. These are axis-aligned logical boxes, not segmentation masks.
 
-The separate `spatial_relations` list uses node labels as endpoints. The `sibling-knn2-budget100-geometric-boolean-v1` policy preserves the original sibling-pair selection and enforces **at most 100 spatial relationship records per chart** across all four spatial types combined. The budget is a record limit, not a node-pair limit. The original selected records, their order, types, endpoints and distance fields are unchanged; `is_near` is added to the existing distance records. Hierarchy links are stored separately through `parent` and do not consume this budget. An unrecorded pair is not a negative label.
+The separate `spatial_relations` list uses node labels as endpoints and stores selected sibling-pair relationships across the four spatial types. The original selected records, their order, types, endpoints and distance fields are unchanged; `is_near` is added to the existing distance records. Hierarchy links are stored separately through `parent`. An unrecorded pair is not a negative label.
 
 `is_near` is a Boolean on each stored `bbox_distance` record. Positive-area overlap and containment are false; exact edge or corner contact is true. Otherwise the shortest box gap must be at most both **0.06 × min(width, height)** and **1.0 × min(sqrt(area_a), sqrt(area_b))**. Compute gaps and areas in pixels using the actual image width and height. The Boolean uses unrounded geometry; `distance_ratio` remains gap divided by the image diagonal.
 
@@ -38,6 +38,6 @@ The separate `spatial_relations` list uses node labels as endpoints. The `siblin
 
 The [included training example](../examples/README.md) contains the exact image, graph object, spatial list, and row identity from the dataset. It illustrates the file format and is not an independent annotation-quality measurement.
 
-Annotations are model-produced and `human_gold` is false. Schema and identity checks establish structural consistency; they do not establish the correctness of every recognized value, box, group, or visual claim in the source image.
+Annotations are produced by the dataset annotation pipeline. The 1,000-chart test split, comprising 500 real and 500 synthetic charts, has been manually verified as described in the paper's annotation-quality assessment. The `human_gold` field is true for test records and false for training records.
 
 Image2SceneGraph's native predictions use a different layout field and box order. Consult the model's output-format guide before comparing a prediction to this dataset.

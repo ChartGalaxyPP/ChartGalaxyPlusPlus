@@ -1,6 +1,6 @@
 # Scene graph preservation benchmark
 
-This package follows the paper's final selection of **11 image-generation models × 1,000 test charts**. It contains **10,949 generated PNG files**, **51 failed-generation records retained at zero score**, saved generation prompts, original graph inputs, final scoring references and predictions, and **11,000 per-image score records**.
+This package follows the paper's final selection of **11 image-generation models × 1,000 test charts**. It contains **10,949 generated PNG files**, **51 failed-generation records retained at zero score**, saved generation prompts, original graph inputs, final predictions, and **11,000 per-image score records**.
 
 All 88 paper-table values were recomputed from the saved scores. Preparation makes no new generation or judge calls. Pipeline code is excluded.
 
@@ -9,7 +9,6 @@ All 88 paper-table values were recomputed from the saved scores. Preparation mak
 | File | Contents |
 | --- | --- |
 | `original_inputs.jsonl.gz` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/scene-graph-preservation-metadata.tar.gz)) | 1,000 original source graphs, runner-format graphs, hashes, and exact main-dataset record bindings |
-| `scoring_references.jsonl.gz` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/scene-graph-preservation-metadata.tar.gz)) | 1,000 final reference graphs after independent hierarchy reconstruction |
 | `generation_records/<model>.jsonl.gz` | 1,000 task records per model with saved prompt text/hash, generated image path/hash, generation status, and recorded parameters |
 | `images/<model>/<benchmark_id>.png` | Successful generated images; original bytes preserved |
 | `predictions/<model>.jsonl.gz` | Final reconstructed prediction graphs; explicit null graph entries for generation failures |
@@ -23,9 +22,9 @@ All 88 paper-table values were recomputed from the saved scores. Preparation mak
 
 Join by `(model, benchmark_id)`. Score records use `sample_key` for the same benchmark ID. Main-dataset source images are located through the `dataset_record` in `original_inputs.jsonl.gz`; this package adds generated outputs only, and does not bundle real source-image files. It does not increase the main dataset's 217,195-chart count.
 
-## Preserve the distinct graph versions
+## Graph inputs and score provenance
 
-The generation inputs contain **99,010 original nodes**. The final scoring references contain **101,587 nodes**, after independent hierarchy reconstruction. The reconstructed references were used for evaluation, not as replacement generation inputs. Keep `source_scene_graph`, `runner_scene_graph`, and final scoring graphs separate. Native dataset/final scoring bounding boxes use **yxyx**; runner-format graph boxes use **xyxy**, normalized to 0–1000.
+The supplied generation inputs contain **99,010 original nodes**. The reported scores were computed against independently reconstructed reference graphs containing **101,587 nodes**; those reference graphs are not included in this package. `source_scene_graph` and `runner_scene_graph` retain the generation inputs and do not replace the scoring references. Native dataset/final scoring bounding boxes use **yxyx**; runner-format graph boxes use **xyxy**, normalized to 0–1000.
 
 Each successful generated image's SHA-256 was checked against the image identity used to reconstruct its scored prediction. Final reference/prediction graph hashes and all original score hashes were also verified. PNG integrity checks verify file structure and checksums; they do not assess visual quality or semantic correctness.
 
@@ -47,12 +46,12 @@ Use the frozen final metric revision in `metric_definitions.json`. Node assignme
 
 **Node, Parent, and Spatial F1 are image-level means over all 1,000 tasks per model.** Spatial relation counts are pooled within each image first. Individual attribute columns use pooled applicable matched-node means. This application's image-macro Parent F1 differs from the image-to-scene-graph application's global-micro Parent F1. Generation failures have zero structural scores and remain in the denominator.
 
-Five records retain `hierarchy_model_review_complete: false`. Preserve their flags; model review is not human verification. The records remain in the final paper selection.
+Five generated-image prediction records have `hierarchy_model_review_complete: false`. This flag concerns automated hierarchy review of generated outputs; it is separate from the human verification of the source test set. These predictions remain in the reported results.
 
 The CC BY-NC 4.0 policy applies to contributed benchmark data and documentation. Source-image rights and third-party model/service terms are not replaced by that license.
 
 ## Image versions
 
-These benchmark records retain the exact image and annotation identities used in the recorded experiments. Some layout images in the main dataset have subsequently received replacement decorative assets; those updated images must not be substituted when reproducing historical scores. Scoring references and input hashes in this package identify the evaluated version.
+These benchmark records retain the exact image and annotation identities used in the recorded experiments. Some layout images in the main dataset have subsequently received replacement decorative assets; those updated images must not be substituted when reproducing historical scores. Saved reference hashes and input hashes identify the evaluated version.
 
 Proximity is evaluated as Boolean `is_near` with no positive-area overlap, a maximum gap of 0.06 times the image short side, and a maximum gap of 1.0 times the square root of the smaller box area. Both distance thresholds must hold. True-negative pairs do not contribute to F1.

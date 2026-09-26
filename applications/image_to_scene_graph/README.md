@@ -37,7 +37,7 @@ Failed outputs remain in the denominator. Existing partial recovery and rejected
 
 `original_score_sha256` records the original private score file's hash. The public JSONL wrapper adds provenance fields, so its serialized bytes have a different hash. Main-dataset graph hashes and evaluator-specific reference hashes are different identity fields and must not be substituted for one another.
 
-The reference annotations are model-produced and are not human gold. The CC BY-NC 4.0 policy applies to contributed benchmark data and documentation; source-image and third-party model rights remain with their owners.
+The reference annotations for the 1,000-chart test set have been manually verified. The CC BY-NC 4.0 policy applies to contributed benchmark data and documentation; source-image and third-party model rights remain with their owners.
 
 ## Image versions
 

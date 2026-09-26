@@ -90,16 +90,16 @@ See the [annotation guide](docs/ANNOTATION_GUIDE.md), [JSON schema](docs/scene_g
 <summary>Exact annotation counts and release notes</summary>
 
 - **Nodes:** 15,591,656 visual elements + 3,088,632 explicit groups + 217,195 implicit roots = 18,897,483.
-- **Relationships:** 18,680,288 parent links + 21,308,862 stored spatial records = 39,989,150. Each chart stores at most 100 spatial records; unrecorded pairs are not negative labels.
+- **Relationships:** 18,680,288 parent links + 21,308,862 stored spatial records = 39,989,150. Unrecorded pairs are not negative labels.
 - `is_near` is Boolean. Positive-area overlaps and containment are excluded; both absolute and relative distance thresholds must hold. The format guide specifies the rule.
-- Annotations are model-produced (`human_gold: false`); the release does not claim that every chart has been independently verified by a human.
+- The 1,000-chart test set, comprising 500 real and 500 synthetic charts, has been manually verified. `human_gold` is true for the test split and false for the training split.
 - Generated replacement illustrations and their affected annotations are included in the main dataset. Historical benchmark packages retain the identities of their evaluated inputs; use their supplied references when inspecting reported results.
 - Real-image references are supplied without checking their current availability. Source pages, direct image URLs, and archive references are distinguished in the format guide.
 
 </details>
 
 
-The application packages provide data, saved outputs, and documentation. QA includes questions, answers, and images; model responses and detailed scoring materials are not included. Annotation, training, evaluation, and review pipeline implementations are not part of this release.
+The application packages provide data, saved outputs, and documentation. The [QA dataset](applications/qa/README.md) includes 1,266 questions, reference answers, and original images; its package documentation specifies the release scope. Annotation, training, evaluation, and review pipeline implementations are not part of this release.
 
 ## License
 
