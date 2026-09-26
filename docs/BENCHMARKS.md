@@ -5,7 +5,7 @@ Download the three application packages from [GitHub Releases](https://github.co
 | Package | Contents |
 | --- | --- |
 | `image-to-scene-graph.tar.gz` | 1,000-chart test index and scoring references; checkpoint-100000 and ten baselines; 11,000 inference records, predictions/failures, and updated scores; request text, model settings, paper table, metric definitions |
-| `qa.tar.gz` | 1,266 questions and answers on 1,000 chart IDs; all 1,006 original evaluated image encodings, mappings, and available source references |
+| `qa.tar.gz` | 1,266 questions and answers on 1,000 chart IDs; URL metadata and mappings for 1,006 evaluated image encodings, without image files |
 | `scene-graph-preservation-metadata.tar.gz` | Original graph inputs, final predictions, 10,999 saved prompts, 51 failures, 11,000 updated scores, model settings and paper table |
 | `scene-graph-preservation-images-*.tar.gz` | 10,949 generated PNGs, split into independently extractable archives |
 
@@ -13,8 +13,8 @@ Extract all generation archives into the same directory. Member paths share the 
 
 The two graph benchmarks retain their exact historical experiment identities. Use `sample_id` or `benchmark_id` to join to the current main dataset index; retained Parquet coordinates and content hashes describe the historical inputs. Some layout PNGs and their graph attributes changed during replacement of decorative assets. The saved benchmark results must not be interpreted as a new evaluation on those modified PNGs.
 
-Real source images remain references in the main dataset and applications A/C. QA includes its original evaluated images under its separate delivery policy. Benchmark image encodings and generated outputs are not additional records in the main dataset's 217,195-chart total.
+Real source images remain references in the main dataset and applications A/C. QA provides image URLs without original image files; unavailable URLs are empty strings. Benchmark image encodings and generated outputs are not additional records in the main dataset's 217,195-chart total.
 
 Proximity scores use Boolean `is_near`, with no true-negative credit. See each package's metric definitions for thresholds and aggregation. Parent F1 is global micro in image-to-scene-graph prediction and image macro in scene graph preservation.
 
-QA contains 1,266 questions, reference answers, original images, and image mappings. See [QA details](QA.md) for the experiment description and release scope. These packages contain data and documentation; annotation, training, evaluation, and review pipeline implementations are excluded.
+QA contains 1,266 questions, reference answers, image URLs, and image mappings. See [QA details](QA.md) for the experiment description and release scope. These packages contain data and documentation; annotation, training, evaluation, and review pipeline implementations are excluded.

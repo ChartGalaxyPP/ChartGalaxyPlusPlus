@@ -10,9 +10,9 @@
     },
     {
       "file": "qa.tar.gz",
-      "bytes": 519244152,
-      "sha256": "a84869b94e43cabf18501170ccd9264db53254981e422819f131dc25e1e2037e",
-      "members": 1014,
+      "bytes": 405549,
+      "sha256": "b378b5a4a1d026002cba4b059abc139e20ecc8e3c2678a3d3269a725aabcd6b0",
+      "members": 8,
       "verified": true
     },
     {
@@ -143,7 +143,12 @@
     "qa": {
       "questions": 1266,
       "charts": 1000,
-      "images": 1006
+      "evaluated_image_encodings": 1006,
+      "bundled_image_files": 0,
+      "image_delivery_policy": "urls_only",
+      "image_urls": 290,
+      "source_urls_only": 54,
+      "no_url": 662
     },
     "scene_graph_preservation": {
       "score_records": 11000,

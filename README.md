@@ -58,7 +58,7 @@ See the [annotation guide](docs/ANNOTATION_GUIDE.md), [JSON schema](docs/scene_g
 | GPT-5.6 Sol | 85.1% | **91.6%** |
 | GPT-6 Astra | 94.0% | **97.6%** |
 
-[Browse the questions](applications/qa/questions.json) · [Download questions, answers, and original images](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz) · [QA package details](docs/QA.md)
+[Browse the questions](applications/qa/questions.json) · [Download questions, answers, and image URLs](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz) · [QA package details](docs/QA.md)
 
 ### 3. Scene graph preservation in image generation
 
@@ -84,7 +84,7 @@ See the [annotation guide](docs/ANNOTATION_GUIDE.md), [JSON schema](docs/scene_g
 | Test | 500 | 500 | 1,000 |
 | **Total** | **56,744** | **160,451** | **217,195** |
 
-**Real charts: URLs + annotation JSON. Synthetic charts: PNG + annotation JSON.** The main dataset is distributed in 926 independently extractable `tar.gz` shards. `sample_index.jsonl.gz` maps each sample ID to its shard and member files. The separate QA package includes its original images.
+**Real charts: URLs + annotation JSON. Synthetic charts: PNG + annotation JSON.** The main dataset is distributed in 926 independently extractable `tar.gz` shards. `sample_index.jsonl.gz` maps each sample ID to its shard and member files. The separate QA package provides image URLs without image files; unavailable URLs are left empty.
 
 <details>
 <summary>Exact annotation counts and release notes</summary>
@@ -99,7 +99,7 @@ See the [annotation guide](docs/ANNOTATION_GUIDE.md), [JSON schema](docs/scene_g
 </details>
 
 
-The application packages provide data, saved outputs, and documentation. The [QA dataset](applications/qa/README.md) includes 1,266 questions, reference answers, and original images; its package documentation specifies the release scope. Annotation, training, evaluation, and review pipeline implementations are not part of this release.
+The application packages provide data, saved outputs, and documentation. The [QA dataset](applications/qa/README.md) includes 1,266 questions, reference answers, and image URLs; its package documentation specifies the release scope. Annotation, training, evaluation, and review pipeline implementations are not part of this release.
 
 ## License
 
