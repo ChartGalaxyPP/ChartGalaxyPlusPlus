@@ -1,13 +1,11 @@
 # Scene-graph-augmented QA
 
-The supplied ChartGalaxy++ QA benchmark contains **1,266 questions on 1,000 chart IDs**, with **1,006 evaluated image encodings**. Reference-answer strings and per-question image identities are preserved. The paper's main comparison and ablations use all 1,266 questions.
+The ChartGalaxy++ QA package contains **1,266 questions on 1,000 chart IDs**, reference answers, **1,000 scene graphs**, and URL metadata. The supplied revision is `urls_uniform_20260926`. Stable question IDs, chart IDs, and the 1,006 evaluated image hashes are preserved.
 
-The QA package includes questions in JSON/CSV, image URLs, chart-to-question mappings, available source references, a manifest, and checksums. The QA dataset archive contains no image files and is available through GitHub Releases. Its documentation and small metadata files are available in the GitHub repository. See [application downloads](BENCHMARKS.md).
+The package is available through [GitHub Releases](BENCHMARKS.md). It contains no image files. Questions and reference answers are provided as JSON and CSV; the scene graphs are in `scene_graphs.jsonl.gz`, joined to questions by `chart_id`. Each graph's nodes, relations, and attributes are preserved from the supplied package.
 
-Six chart IDs have two image encodings or resolutions. Use `chart_id` when counting charts and the per-question `image_sha256` when selecting the actual evaluated image. Some reference answers are JSON-encoded lists stored as strings; keep them verbatim until applying the benchmark's answer-equivalence rules.
+The image references cover 441 charts with image URLs and 59 with public Parquet URLs plus row/column selectors. The remaining 500 charts have only local PNGs in the source package; these images are excluded and their URLs are left empty. `image_reference` retains each supplied URL, resize setting, or Parquet selector. `image_url` contains only direct image links, and `source_url` retains available source-page metadata. In CSV, `image_reference` is a JSON-encoded object.
 
-Each question has an `image_url` field and a separate `source_url` field. Missing URLs are empty strings (`""`) in JSON and empty cells in CSV. Source pages and archive links are not substituted for direct image URLs. This applies to all QA images, including synthetic images. In the main dataset, real images remain URL/source/archive references only and synthetic images are supplied as PNGs. QA images do not increase the main dataset's chart count.
+Six chart IDs have two evaluated image encodings. Count charts with `chart_id` and retain each question's `image_sha256` to distinguish historical inputs. Some answers are JSON-encoded lists stored as strings; keep them verbatim when loading the data. URLs have not been checked for current availability or returned image bytes.
 
-The retained metadata provides image URLs for 290 evaluated image encodings and source-page URLs only for another 54; both URL fields are empty for the remaining 662. Additional references and provenance are retained in `image_references.jsonl`. Existing URLs have not been checked for current availability or matching image bytes.
-
-The paper compares image-only and scene-graph-augmented QA using graphs from the dataset annotation pipeline. See the [QA package manifest](../applications/qa/manifest.json) for dataset counts and source checksums.
+The main dataset's real charts remain URL/source/archive references and its synthetic charts include PNGs. QA does not increase the main dataset's chart count. See the [QA package README](../applications/qa/README.md) for the reference schema and the [manifest](../applications/qa/manifest.json) for counts and source checksums.

@@ -1,42 +1,50 @@
 # ChartGalaxy++ QA
 
-This package contains **1,266 questions on 1,000 chart IDs**, with reference answers and URL metadata for **1,006 evaluated image encodings**. It distributes **URLs only, without original image files**. The benchmark revision is `coverage1000_1266_20260923`; the paper's main QA comparison and ablations use all 1,266 questions.
+This package contains **1,266 questions on 1,000 chart IDs**, reference answers, **1,000 scene graphs**, and image URL metadata. It distributes **URLs only, without original image files**. The supplied revision is `urls_uniform_20260926`.
 
-Question text, question IDs, reference-answer strings, chart IDs, numeric question-type codes, and per-question image hashes are preserved. Some answers are strings containing JSON lists; do not automatically parse or normalize them into another answer representation.
-
-The paper compares image-only and scene-graph-augmented QA using graphs produced by the dataset annotation pipeline. Download the QA data package from the project GitHub Releases.
+Question and answer strings and scene graphs follow the supplied revision. Stable question IDs, chart IDs, question-type codes, and the 1,006 evaluated image hashes are retained. Some answers are strings containing JSON lists; preserve these strings when loading the data.
 
 ## Files
 
 | File | Contents |
 | --- | --- |
-| [questions.json](questions.json) | All 1,266 questions and reference answers, with `image_url` and `source_url` fields |
-| [questions.csv](questions.csv) | The same records as UTF-8 CSV |
+| [questions.json](questions.json) | All 1,266 questions and reference answers, image references, and chart IDs |
+| [questions.csv](questions.csv) | The same records as UTF-8 CSV; `image_reference` is JSON encoded in a cell |
+| `scene_graphs.jsonl.gz` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz)) | The 1,000 supplied scene graphs, with `chart_id` as the join key |
 | `charts.jsonl` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz)) | Chart IDs, associated question IDs, and evaluated image hashes |
-| `image_references.jsonl` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz)) | One entry per evaluated image hash, with URLs, dimensions, provenance, and available main-dataset matches |
-| [manifest.json](manifest.json) | Dataset counts, benchmark revision, and URL coverage |
+| `image_references.jsonl` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz)) | Image URLs, selection/resize parameters, dimensions, and available provenance |
+| [manifest.json](manifest.json) | Dataset counts, revision, source hashes, and URL coverage |
 | `SHA256SUMS` | Checksums for all package files except the checksum list itself |
 
-## Image URLs
+## Image references
 
-Each question provides `image_url` for an available image link and `source_url` for an available source page. **Unavailable URLs are empty strings (`""`)**, including in CSV. Source pages and archive links are not substituted for image URLs. Additional source references, archive-member metadata, and URL candidates remain in `image_references.jsonl`.
+The `image_reference` object preserves the supplied image locator:
 
-Join questions to image references using `image_sha256`. The hash identifies the image encoding used in evaluation; URLs may return a different encoding or resolution. Six chart IDs have two image encodings, so use `chart_id` to count charts and retain the per-question hash to distinguish the evaluated inputs.
+- `{"url": "https://..."}` identifies an image URL.
+- `{"url": "https://...", "resize": [width, height]}` also records the supplied target dimensions.
+- `{"url": "https://...parquet", "format": "parquet", "row": 1617, "column": "figure_path"}` identifies an image stored in a public Parquet file. Select the zero-based row and indicated column; the URL points to the data file, not a standalone image.
+- `{"url": ""}` marks an image for which the supplied package contains only a local PNG. Those PNGs are excluded from this release.
 
-| Available URL metadata | Image encodings |
+The convenience field `image_url` is populated only for image URLs. It is empty for Parquet references and unavailable URLs; consult `image_reference` to distinguish these cases. Existing source-page metadata is retained separately as `source_url`. Missing URLs are empty strings in JSON and empty cells in CSV.
+
+| Image reference | Charts |
 | --- | ---: |
-| Image URL | 290 |
-| Source page only | 54 |
-| No image or source-page URL | 662 |
+| Image URL | 441 |
+| Public Parquet URL with row/column selector | 59 |
+| URL unavailable | 500 |
 
-URLs are taken from retained metadata. Their current availability and returned bytes have not been checked. The QA archive contains no image binaries, including synthetic QA images. In the main dataset, real images remain URL/source/archive references and synthetic images are provided as PNGs.
+These are chart counts. Six chart IDs have two evaluated image encodings, giving 1,006 image hashes. Join a question to image metadata using `image_sha256`, and to its supplied graph using `chart_id`. Retain the per-question hash when distinguishing historical evaluation inputs. Image URLs and Parquet selectors have not been checked for current availability or returned image bytes.
 
-`main_dataset_matches` records verified correspondences to the pre-replacement main dataset where available. It does not assert that the dataset graph was the exact simplified scene graph used in the QA experiments. QA images do not add records to the main dataset's chart count.
+The main dataset retains its separate delivery policy: real charts are references and synthetic charts include PNGs. QA contains no image files and does not add records to the main dataset's chart count.
+
+## Scene graphs
+
+Each line in `scene_graphs.jsonl.gz` contains `chart_id` and `scene_graph`. The graph's `nodes` and `relations` are preserved as supplied, including labels, node types, boxes, parent links, text, and relation attributes. Questions about the same chart share one graph record.
 
 ## File integrity
 
-The package checksums cover its metadata and question files. JSON and CSV contain matching question records. Questions and reference answers are preserved without modification.
+JSON and CSV records agree. Package checksums cover every supplied file. The graph records and question/answer strings were checked against the supplied source package.
 
 ## Attribution and license
 
-Contributed ChartGalaxy++ question/answer data and documentation follow the project's CC BY-NC 4.0 release policy. Images referenced by URLs retain their owners' rights. Source collections such as InfoChartQA are identified in the reference records when verified. The benchmark's annotation license does not grant rights to third-party imagery.
+Contributed ChartGalaxy++ question/answer data, annotations, and documentation follow the project's CC BY-NC 4.0 release policy. Referenced imagery and upstream datasets retain their owners' rights and required attribution. Source collections such as InfoChartQA remain identified in the provenance records. The annotation license does not grant rights to third-party imagery.
