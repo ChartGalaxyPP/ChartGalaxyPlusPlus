@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "date_utc": "2026-09-24T12:34:21.923430+00:00",
-  "scope": "One standalone image-to-JSON inference; no benchmark accuracy evaluation.",
+  "scope": "One standalone image-to-scene-graph inference; no benchmark accuracy evaluation.",
   "runtime": {
     "python": "3.11.14",
     "vllm": "0.20.2",

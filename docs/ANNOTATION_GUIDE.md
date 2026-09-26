@@ -40,4 +40,4 @@ The [included training example](../examples/README.md) contains the exact image,
 
 Annotations are model-produced and `human_gold` is false. Schema and identity checks establish structural consistency; they do not establish the correctness of every recognized value, box, group, or visual claim in the source image.
 
-Image2JSON's native predictions use a different layout field and box order. Consult the model's output-format guide before comparing a prediction to this dataset.
+Image2SceneGraph's native predictions use a different layout field and box order. Consult the model's output-format guide before comparing a prediction to this dataset.

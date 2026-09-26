@@ -1,4 +1,4 @@
-# Image2JSON output format
+# Image2SceneGraph output format
 
 The model emits a JSON object with `high_level_description`, `style_description`, and `elements`. `elements.background` describes the background, and `elements.layout` is a flat list of element and group nodes. A node's `parent` refers to another node label or the implicit `ROOT`.
 

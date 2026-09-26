@@ -1,6 +1,6 @@
 # Application data
 
-Download the three application packages from [GitHub Releases](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/tag/v1.0). The main dataset and Image2JSON model are on Hugging Face.
+Download the three application packages from [GitHub Releases](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/tag/v1.0). The main dataset and Image2SceneGraph model are on Hugging Face.
 
 | Package | Contents |
 | --- | --- |

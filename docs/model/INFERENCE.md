@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 
 def main():
-    model_dir = Path("./image2json-model").resolve()
+    model_dir = Path("./image2scenegraph-model").resolve()
     image_path = Path("./example.png")
     spec = json.loads((model_dir / "inference_spec.json").read_text())
     for key, value in spec["environment"].items():

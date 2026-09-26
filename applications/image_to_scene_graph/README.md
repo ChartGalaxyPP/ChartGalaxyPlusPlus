@@ -1,6 +1,6 @@
 # Image-to-scene-graph benchmark
 
-This package contains the paper-selected **Image2JSON checkpoint-100000 and ten baselines**, evaluated on the same **1,000 test charts**. It includes **11,000 per-image score records**, the final paper table, metric definitions, and exact main-dataset test bindings. All 88 table values were recomputed from these saved scores, without new model or judge calls.
+This package contains the paper-selected **Image2SceneGraph checkpoint-100000 and ten baselines**, evaluated on the same **1,000 test charts**. It includes **11,000 per-image score records**, the final paper table, metric definitions, and exact main-dataset test bindings. All 88 table values were recomputed from these saved scores, without new model or judge calls.
 
 The package also contains all 11,000 final prediction/failure records, 11,000 inference records with the saved responses and exact request text, 1,000 scoring references, and all eleven model protocols. Annotation, training, evaluation, and review pipeline code is excluded; this is an experimental-data package rather than an executable evaluation toolkit.
 

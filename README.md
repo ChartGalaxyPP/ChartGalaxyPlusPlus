@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://huggingface.co/datasets/ChartGalaxyPP/ChartGalaxyPlusPlus">Dataset</a> &nbsp; · &nbsp;
-  <a href="https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2JSON">Image2JSON model</a> &nbsp; · &nbsp;
+  <a href="https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2SceneGraph">Image2SceneGraph model</a> &nbsp; · &nbsp;
   <a href="https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/tag/v1.0">Application data</a>
 </p>
 
@@ -39,13 +39,13 @@ See the [annotation guide](docs/ANNOTATION_GUIDE.md), [JSON schema](docs/scene_g
 
 ### 1. Image-to-scene-graph prediction
 
-**Recover the structure behind an infographic.** Image2JSON, fine-tuned from the Qwen3.5-4B family, predicts visual elements, semantic groups, and their hierarchy. On the 1,000-chart test set it achieves **89.4% node F1, 85.1% hierarchy F1, and 88.0% spatial F1**, compared with 76.0%, 50.3%, and 72.5% for GPT-6 Astra under the same evaluation protocol.
+**Recover the structure behind an infographic.** Image2SceneGraph, fine-tuned from the Qwen3.5-4B family, predicts visual elements, semantic groups, and their hierarchy. On the 1,000-chart test set it achieves **89.4% node F1, 85.1% hierarchy F1, and 88.0% spatial F1**, compared with 76.0%, 50.3%, and 72.5% for GPT-6 Astra under the same evaluation protocol.
 
-![Paper examples comparing element localization and semantic grouping from Image2JSON and GPT-6 Astra](assets/image2json-results.png)
+![Paper examples comparing element localization and semantic grouping from Image2SceneGraph and GPT-6 Astra](assets/image2scenegraph-results.png)
 
 *Qualitative examples from the paper: separating nearby elements and assigning marks to the correct group.*
 
-[Download the model](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2JSON) · [Inference guide](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2JSON/blob/main/INFERENCE.md) · [Results for all 11 models](applications/image_to_scene_graph/paper_table.json) · [Benchmark package](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/image-to-scene-graph.tar.gz)
+[Download the model](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2SceneGraph) · [Inference guide](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2SceneGraph/blob/main/INFERENCE.md) · [Results for all 11 models](applications/image_to_scene_graph/paper_table.json) · [Benchmark package](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/image-to-scene-graph.tar.gz)
 
 ### 2. Scene-graph-augmented question answering
 
@@ -75,7 +75,7 @@ See the [annotation guide](docs/ANNOTATION_GUIDE.md), [JSON schema](docs/scene_g
 | Resource | Where to start |
 | --- | --- |
 | **Main dataset** | [Hugging Face](https://huggingface.co/datasets/ChartGalaxyPP/ChartGalaxyPlusPlus) · [Load a sample](docs/USAGE.md) · [Data format](docs/DATA_FORMAT.md) |
-| **Image2JSON model** | [Weights and model card](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2JSON) · [Local inference](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2JSON/blob/main/INFERENCE.md) |
+| **Image2SceneGraph model** | [Weights and model card](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2SceneGraph) · [Local inference](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2SceneGraph/blob/main/INFERENCE.md) |
 | **Three application packages** | [GitHub Release v1.0](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/tag/v1.0) · [Package contents](docs/BENCHMARKS.md) |
 
 | Split | Real charts | Synthetic charts | Total |
@@ -103,4 +103,4 @@ The application packages provide data, saved outputs, and documentation. QA incl
 
 ## License
 
-Contributed annotations and Image2JSON fine-tuning contributions are released under **CC BY-NC 4.0**. Third-party chart content and required upstream attributions retain their respective rights. See [license and sources](docs/LICENSE_AND_SOURCES.md) and the [model license notice](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2JSON/blob/main/NOTICE.md).
+Contributed annotations and Image2SceneGraph fine-tuning contributions are released under **CC BY-NC 4.0**. Third-party chart content and required upstream attributions retain their respective rights. See [license and sources](docs/LICENSE_AND_SOURCES.md) and the [model license notice](https://huggingface.co/ChartGalaxyPP/ChartGalaxyPlusPlus-Image2SceneGraph/blob/main/NOTICE.md).

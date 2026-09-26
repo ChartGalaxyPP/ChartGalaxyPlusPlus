@@ -137,7 +137,7 @@
     "node_ids": "Illustrative IDs from the paper figure; not a claim of released sample identifiers."
   },
   "paper_figures": {
-    "image2json-results.png": "Qualitative comparison of image-to-scene-graph predictions (paper figure).",
+    "image2scenegraph-results.png": "Qualitative comparison of image-to-scene-graph predictions (paper figure).",
     "generation-results.png": "Qualitative scene graph preservation comparison (paper figure)."
   }
 }
