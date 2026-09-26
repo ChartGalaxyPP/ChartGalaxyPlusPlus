@@ -8,13 +8,13 @@ The package also contains all 11,000 final prediction/failure records, 11,000 in
 
 | File | Contents |
 | --- | --- |
-| [test_index.jsonl](test_index.jsonl) | 1,000 main-dataset test records with sample and benchmark IDs, content hashes, and Parquet locations |
+| `test_index.jsonl` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/image-to-scene-graph.tar.gz)) | 1,000 main-dataset test records with sample and benchmark IDs, content hashes, and Parquet locations |
 | `scores/<model>.jsonl.gz` | 1,000 score records per selected model, including matched-node attributes and structural counts |
 | `predictions/<model>.jsonl.gz` | Scored native graphs, partial-recovery projections, or explicit failures; score hashes and exact denominators |
 | `inference_records/<model>.jsonl.gz` | Saved model responses, original/supplied-repaired outputs, request text, and attempt outcomes |
 | `scoring_references.jsonl.gz` | Exact 1,000 evaluator reference graphs and their original hashes |
 | `protocols/<model>.json` and `protocols/assets/` | Inference settings, archived task definitions, decoder schemas, and grammars |
-| [PREDICTIONS.md](PREDICTIONS.md) | Raw/final distinctions, failed outputs, request provenance, and recovery |
+| `PREDICTIONS.md` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/image-to-scene-graph.tar.gz)) | Raw/final distinctions, failed outputs, request provenance, and recovery |
 | [paper_table.json](paper_table.json) | Paper-selected model rows, metrics, aggregation contract, and source-result hash |
 | [metric_definitions.json](metric_definitions.json) | Frozen metric and aggregation settings |
 | [manifest.json](manifest.json) | Package counts, selection, and remaining materials |

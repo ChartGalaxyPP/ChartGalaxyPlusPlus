@@ -12,8 +12,8 @@ Questions, reference answers, and original images are included in this package. 
 | --- | --- |
 | [questions.json](questions.json) | All 1,266 questions and reference answers |
 | [questions.csv](questions.csv) | The same records as UTF-8 CSV |
-| [charts.jsonl](charts.jsonl) | Chart IDs, associated question IDs, and evaluated image encodings |
-| [image_references.jsonl](image_references.jsonl) | One entry per evaluated image SHA-256, with dimensions, references, delivery status, and exact main-dataset matches when available |
+| `charts.jsonl` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz)) | Chart IDs, associated question IDs, and evaluated image encodings |
+| `image_references.jsonl` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/qa.tar.gz)) | One entry per evaluated image SHA-256, with dimensions, references, delivery status, and exact main-dataset matches when available |
 | `images/` | All 1,006 original evaluated image files, including real images |
 | [manifest.json](manifest.json) | Counts, source hashes, version confirmation, delivery coverage, and missing materials |
 | `SHA256SUMS` | Checksums for all package files except the checksum list itself |

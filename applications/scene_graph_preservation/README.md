@@ -8,14 +8,14 @@ All 88 paper-table values were recomputed from the saved scores. Preparation mak
 
 | File | Contents |
 | --- | --- |
-| [original_inputs.jsonl.gz](original_inputs.jsonl.gz) | 1,000 original source graphs, runner-format graphs, hashes, and exact main-dataset record bindings |
-| [scoring_references.jsonl.gz](scoring_references.jsonl.gz) | 1,000 final reference graphs after independent hierarchy reconstruction |
+| `original_inputs.jsonl.gz` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/scene-graph-preservation-metadata.tar.gz)) | 1,000 original source graphs, runner-format graphs, hashes, and exact main-dataset record bindings |
+| `scoring_references.jsonl.gz` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/scene-graph-preservation-metadata.tar.gz)) | 1,000 final reference graphs after independent hierarchy reconstruction |
 | `generation_records/<model>.jsonl.gz` | 1,000 task records per model with saved prompt text/hash, generated image path/hash, generation status, and recorded parameters |
 | `images/<model>/<benchmark_id>.png` | Successful generated images; original bytes preserved |
 | `predictions/<model>.jsonl.gz` | Final reconstructed prediction graphs; explicit null graph entries for generation failures |
 | `scores/<model>.jsonl.gz` | Final per-image scores, matches, attribute scores, and saved description judgments |
-| [generation_failures.json](generation_failures.json) | All 51 generation failures, retained in the evaluation denominator |
-| [model_configurations.json](model_configurations.json) | Settings for the 11 selected models; internal cloud billing project removed |
+| `generation_failures.json` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/scene-graph-preservation-metadata.tar.gz)) | All 51 generation failures, retained in the evaluation denominator |
+| `model_configurations.json` ([download archive](https://github.com/ChartGalaxyPP/ChartGalaxyPlusPlus/releases/download/v1.0/scene-graph-preservation-metadata.tar.gz)) | Settings for the 11 selected models; internal cloud billing project removed |
 | [metric_definitions.json](metric_definitions.json) | Frozen metric and aggregation contract |
 | [paper_table.json](paper_table.json) | Final selected rows and original snapshot identity |
 | [manifest.json](manifest.json) | Counts and package scope |

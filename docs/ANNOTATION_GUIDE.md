@@ -36,7 +36,7 @@ The separate `spatial_relations` list uses node labels as endpoints. The `siblin
 
 ## Example and limitations
 
-The [included training example](examples/README.md) contains the exact image, graph object, spatial list, and row identity from the dataset. It illustrates the file format and is not an independent annotation-quality measurement.
+The [included training example](../examples/README.md) contains the exact image, graph object, spatial list, and row identity from the dataset. It illustrates the file format and is not an independent annotation-quality measurement.
 
 Annotations are model-produced and `human_gold` is false. Schema and identity checks establish structural consistency; they do not establish the correctness of every recognized value, box, group, or visual claim in the source image.
 
